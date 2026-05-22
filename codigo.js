@@ -1,23 +1,3 @@
-function calcular() {
-    var n1 = parseInt(document.getElementById("numero1").value);
-    var n2 = parseInt(document.getElementById("numero2").value);
-    var result;
-    var op = document.getElementById("operar").value;
-
-    if (op == "1") {
-        result = n1 + n2;
-    }
-
-    if (op == "2") {
-        result = n1 - n2;
-    }
-
-    if (op == "3") {
-        result = n1 * n2;
-    }
-
-    document.getElementById("resultado2").textContent = "El resultado es " + result;
-}
 
 function validar() {
     var usu = document.getElementById("usuario").value;
@@ -121,7 +101,7 @@ function cotizar() {
         document.getElementById("resultado4").textContent = "$8500";
     }
 }
-// Reserva de turnos de la barbería
+
 function reservarTurno() {
   let nombre = document.getElementById("nombreTurno").value;
   let telefono = document.getElementById("telefonoTurno").value;
@@ -144,7 +124,7 @@ function reservarTurno() {
   }
 }
 
-// Limpia el formulario de turnos
+
 function limpiarTurno() {
   document.getElementById("nombreTurno").value = "";
   document.getElementById("telefonoTurno").value = "";
