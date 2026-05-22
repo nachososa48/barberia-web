@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="codigo.js"></script>
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+    <div id="div2">
+        <h1>AFILIACION DEL CLIENTE</h1>
+
+        <form>
+            <p><strong>Nombre</strong> <input type="text" id="nombre" placeholder="indique su nombre"></p>
+            <p>Apellido <input type="text" id="apellido" placeholder="indique apellido"></p>
+            <p><u>EDAD</u> <input type="number" id="edad"></p>
+            <p>Fecha N <input type="date" id="fecha" value="2008-01-20"></p>
+            <p>EMAIL <input type="email" id="email" placeholder="indique su email"></p>
+            <p>SEXO: Masculino <input type="radio" name="sexo" value="Masculino"> Femenino <input type="radio" name="sexo" value="Femenino"></p>
+        </form>
+
+        <a href="turnos.html">
+  <button>Reservar Turno</button>
+</a>
+        <button onclick="afiliar()">AFILIAR</button>
+        <br>
+        <p id="resultado3"></p>
+    </div>
+
+    <div id="div2">
+        <h1 class="nuevo">COTIZAR SERVICIO</h1>
+
+        <form>
+            <p>Servicio:
+                <select id="servicio">
+                    <option value="1">CORTE</option>
+                    <option value="2">BARBA</option>
+                    <option value="3">CORTE Y BARBA</option>
+                    <option value="4">COLOR</option>
+                </select>
+            </p>
+
+            <p>Tipo:
+                <select id="tipo">
+                    <option value="1">NORMAL</option>
+                    <option value="2">PREMIUM</option>
+                    <option value="3">A DOMICILIO</option>
+                    <option value="4">CON DESCUENTO</option>
+                </select>
+            </p>
+        </form>
+
+        <button onclick="cotizar()">COTIZAR</button>
+        <br>
+        <p id="resultado4"></p>
+    </div>
+
+    <div id="div2">
+        <h1 class="nuevo">CALCULADORA</h1>
+
+        <form>
+            <p>Numero 1 <input type="number" id="numero1"></p>
+            <p>Numero 2 <input type="number" id="numero2"></p>
+
+            <p>Operacion:
+                <select id="operar">
+                    <option value="1">SUMA</option>
+                    <option value="2">RESTA</option>
+                    <option value="3">MULTIPLICACION</option>
+                </select>
+            </p>
+        </form>
+
+        <button onclick="calcular()">CALCULAR</button>
+        <br>
+        <p id="resultado2"></p>
+    </div>
+
+</body>
+</html>

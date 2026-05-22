@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnos - Barbería</title>
+  <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>Reserva de Turnos</h1>
+    <p class="subtitulo">Completá los datos para solicitar un turno en la barbería.</p>
+
+    <div class="caja">
+      <label>Nombre del cliente:</label>
+      <input type="text" id="nombreTurno" placeholder="Ej: Ignacio Sosa">
+
+      <label>Teléfono:</label>
+      <input type="text" id="telefonoTurno" placeholder="Ej: 3511234567">
+
+      <label>Servicio:</label>
+      <select id="servicioTurno">
+        <option value="">Seleccione un servicio</option>
+        <option value="Corte clásico">Corte clásico</option>
+        <option value="Degradé">Degradé</option>
+        <option value="Barba">Barba</option>
+        <option value="Corte + barba">Corte + barba</option>
+      </select>
+
+      <label>Fecha:</label>
+      <input type="date" id="fechaTurno">
+
+      <label>Hora:</label>
+      <input type="time" id="horaTurno">
+
+      <button onclick="reservarTurno()">Reservar turno</button>
+      <button onclick="limpiarTurno()">Limpiar</button>
+
+      <p id="resultadoTurno"></p>
+    </div>
+
+    <br>
+
+    <a href="sistema.html">Volver al sistema</a>
+  </div>
+
+  <script src="codigo.js"></script>
+</body>
+</html>
